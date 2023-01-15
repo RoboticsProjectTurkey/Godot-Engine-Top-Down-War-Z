@@ -1,0 +1,37 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="TopDownWar"
+run/main_scene="res://Scenes/Main_Scene.tscn"
+config/icon="res://icon.png"
+
+[layer_names]
+
+2d_physics/layer_1="platform"
+2d_physics/layer_2="player"
+2d_physics/layer_3="game_area"
+2d_physics/layer_4="objects"
+2d_physics/layer_5="bullet"
+2d_physics/layer_6="zombies"
+2d_physics/layer_7="money"
+2d_physics/layer_8="finish point"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"
